@@ -1,5 +1,12 @@
 {
   "private": true,
+  "scripts": {
+    "preview": "start preview.html",
+    "lint:js": "eslint .",
+    "lint:css": "stylelint \"**/*.scss\"",
+    "lint": "pnpm lint:js && pnpm lint:css",
+    "format": "prettier --write ."
+  },
   "devDependencies": {
     "@discourse/lint-configs": "2.32.0",
     "ember-template-lint": "7.9.1",

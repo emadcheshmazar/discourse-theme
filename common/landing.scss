@@ -1,0 +1,33 @@
+.landing-page-container {
+  width: 100%;
+  min-height: calc(100vh - 60px);
+  height: calc(100vh - 60px);
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+}
+
+.landing-page-iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+  flex: 1;
+  display: block;
+}
+
+// Remove default Discourse margins for landing page
+body.landing-page {
+  .landing-page-container {
+    margin-top: -1em;
+  }
+}
+
+// Mobile responsive
+@media (max-width: 768px) {
+  .landing-page-container {
+    min-height: calc(100vh - 50px);
+    height: calc(100vh - 50px);
+  }
+}
