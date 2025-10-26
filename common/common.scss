@@ -638,23 +638,3 @@ html body #main-outlet {
 .title-voting {
   padding-left: 14px;
 }
-
-// Hub page customizations
-.hub-container {
-  position: fixed;
-  top: 60px;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  width: 100%;
-  height: calc(100vh - 60px);
-  background: var(--secondary);
-  z-index: 1000;
-
-  .hub-iframe {
-    width: 100%;
-    height: 100%;
-    border: none;
-    display: block;
-  }
-}
